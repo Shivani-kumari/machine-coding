@@ -1,0 +1,26 @@
+.imageStyle {
+    background-color: pink;
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+   grid-template-columns: 1fr; /* Default: 1 card per row */
+  }
+  @media (min-width:768px) and (max-width:1024px){
+    .imageStyle{
+        grid-template-columns: repeat(2,1fr); /* 2 cards per row */
+        background-color: lightblue;
+    }
+  }
+  @media (min-width:1025px){
+    .imageStyle{
+        grid-template-columns: repeat(3,1fr); /* 3 cards per row */
+        background-color: lightgreen;
+    }
+  }
+  .img{
+    text-align: center;
+  }
+  
+ 
